@@ -7,9 +7,10 @@ function App() {
   return (
     <>
       <h1>Vite + React</h1>
+      <Device name="Laptop" price="55"></Device>
+      <Device name="Mobile" price="15"></Device>
       <Student></Student>
       <Developer></Developer>
-      <Device></Device>
       {/* <p>learned about basic component </p>
       <p>there are 4 type to declare component</p> */}
     </>
@@ -24,8 +25,12 @@ function Student() {
   );
 }
 
-function Device() {
-  return <h2>This Device</h2>;
+function Device(props) {
+  return (
+    <h2>
+      This Device: {props.name} Price : {props.price}
+    </h2>
+  );
 }
 
 function Developer() {
