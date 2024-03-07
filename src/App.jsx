@@ -26,9 +26,10 @@ function Student() {
 }
 
 function Device(props) {
+  const { name, price } = props;
   return (
     <h2>
-      This Device: {props.name} Price : {props.price}
+      This Device: {name} Price : {price}
     </h2>
   );
 }
