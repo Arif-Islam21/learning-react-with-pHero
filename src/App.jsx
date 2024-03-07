@@ -7,22 +7,39 @@ function App() {
   return (
     <>
       <h1>Vite + React</h1>
-      <Person></Person>
-      <Person></Person>
-      <Person></Person>
+      <Student></Student>
+      <Developer></Developer>
+      <Device></Device>
       {/* <p>learned about basic component </p>
       <p>there are 4 type to declare component</p> */}
     </>
   );
 }
 
-function Person() {
-  const age = 18;
-  const money = 5;
+function Student() {
   return (
-    <h3>
-      I am a Person with age {age} have {money} tk
-    </h3>
+    <div className="student">
+      <h3>this is a student</h3>
+    </div>
+  );
+}
+
+function Device() {
+  return <h2>This Device</h2>;
+}
+
+function Developer() {
+  const developerStyle = {
+    margin: "10px",
+    padding: "10px",
+    border: "2px solid tomato",
+    borderRadius: "10px",
+  };
+  return (
+    <div style={developerStyle}>
+      <h5>devo devo</h5>
+      <p>Coding</p>
+    </div>
   );
 }
 
