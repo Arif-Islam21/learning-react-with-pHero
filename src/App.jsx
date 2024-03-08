@@ -3,6 +3,7 @@
 // import viteLogo from "/vite.svg";
 import "./App.css";
 import Counter from "./Counter";
+import Friends from "./Friends";
 import Team from "./Team";
 import Users from "./User";
 
@@ -19,6 +20,7 @@ function App() {
 
   return (
     <>
+      <Friends></Friends>
       <Users></Users>
       <Team></Team>
       <Counter></Counter>
