@@ -13,7 +13,7 @@ export default function Friends() {
     <div className="box">
       <h3>Friends: {friends.length}</h3>
       {friends.map((friend) => (
-        <Friend></Friend>
+        <Friend friend={friend}></Friend>
       ))}
     </div>
   );
