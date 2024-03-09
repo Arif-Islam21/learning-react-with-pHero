@@ -2,6 +2,7 @@
 // import reactLogo from "./assets/react.svg";
 // import viteLogo from "/vite.svg";
 import "./App.css";
+import Check from "./Check";
 import Counter from "./Counter";
 import Friends from "./Friends";
 import Team from "./Team";
@@ -20,6 +21,7 @@ function App() {
 
   return (
     <>
+      <Check></Check>
       <Friends></Friends>
       <Users></Users>
       <Team></Team>
